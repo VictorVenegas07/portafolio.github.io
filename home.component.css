@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    ---bg-color: #fff;  
+    ---second-bg-color: #0ef; 
+    --text-color: #1f242d; 
+    --main-color: #323946; 
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden ;
+}
+body{
+    background: var(---bg-color);
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(---bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;  
+}
+
+#menu-icono{
+    font-size: 1.5rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.navbar a{
+    font-size: 1.9rem;
+    color: var(--text-color);
+    margin-left: 3rem;
+}
+
+.navbar a:hover, .navbar a:active{
+    color: var(--main-color);
+}
+
+.inicio{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+.imagen-inicio img{
+    width: 30vw;
+}
+.contenido-inicio h3{
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+.contenido-inicio h1{
+    font-size: 3.0rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.contenido-inicio p{
+    font-size: 1.3rem;
+}
+
+.redes-sociales a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    width: 2.5rem;
+    background: transparent;
+    border: .1rem solid #fff;
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+}
