@@ -385,7 +385,7 @@ textarea {
     }
 
     .header{
-        padding: 4rem 9%;
+        padding: 3rem 9%;
     }
     .navbar{
         position: absolute;
@@ -407,6 +407,34 @@ textarea {
         margin: 0 0 17px 0;
         font-size: 3rem;
     }
+
+    .sobre-mi {
+        display: flex;
+        margin-top: 4rem;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sobre-mi-img img {
+        width: 57vw;
+        margin: 46px;
+    }
+    .contenido-sobre-mi {
+        align-items: center;
+        top: 0rem;
+        margin-left: 0pc;
+    }
+    .inicio {
+        flex-direction: column;
+    }
+    .imagen-inicio img {
+        width: 44vw;
+        margin: 8rem;
+        position: initial;
+    }
+
+
 }
 
 @media (max-width: 650px ){
