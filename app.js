@@ -16,3 +16,22 @@ window.onscroll = () =>{
     nav.classList.remove('active');
     console.log(window.scrollY);
 };
+
+
+const textInput = document.getElementById('numberInput');
+
+textInput.addEventListener('keydown', function(event) {
+    const allowedKeys = ['Backspace']
+    console.log(event.key)
+    if (!isNumber(event.key) && !allowedKeys.includes(event.key)) {
+      event.preventDefault();
+    }
+  });
+
+function isNumber(value) {
+    return !isNaN(parseFloat(value)) && isFinite(value);
+  }
+  
+  function isLetter(value) {
+    return /^[a-zA-Z]$/.test(value);
+  }
